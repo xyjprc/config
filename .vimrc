@@ -320,3 +320,14 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
+"
+
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=red
+au BufRead *.tex setlocal spell
+
+nnoremap <F2> :w<CR>:make<CR>
+:command WQ wq 
+:command Wq wq 
+:command W w 
+:command Q q 
